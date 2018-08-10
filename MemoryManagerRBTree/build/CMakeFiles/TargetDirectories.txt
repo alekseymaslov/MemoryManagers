@@ -1,0 +1,13 @@
+/home/alex/projects/MemoryManagerRBTree/build/CMakeFiles/install/strip.dir
+/home/alex/projects/MemoryManagerRBTree/build/CMakeFiles/install.dir
+/home/alex/projects/MemoryManagerRBTree/build/CMakeFiles/install/local.dir
+/home/alex/projects/MemoryManagerRBTree/build/CMakeFiles/list_install_components.dir
+/home/alex/projects/MemoryManagerRBTree/build/CMakeFiles/edit_cache.dir
+/home/alex/projects/MemoryManagerRBTree/build/CMakeFiles/rebuild_cache.dir
+/home/alex/projects/MemoryManagerRBTree/build/src/CMakeFiles/install/strip.dir
+/home/alex/projects/MemoryManagerRBTree/build/src/CMakeFiles/edit_cache.dir
+/home/alex/projects/MemoryManagerRBTree/build/src/CMakeFiles/memorymanagerrbtree.dir
+/home/alex/projects/MemoryManagerRBTree/build/src/CMakeFiles/rebuild_cache.dir
+/home/alex/projects/MemoryManagerRBTree/build/src/CMakeFiles/list_install_components.dir
+/home/alex/projects/MemoryManagerRBTree/build/src/CMakeFiles/install/local.dir
+/home/alex/projects/MemoryManagerRBTree/build/src/CMakeFiles/install.dir

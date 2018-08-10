@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/headers/memorymanagerrbtree_facilities.h
+iostream
+-
+fstream
+-
+sstream
+-
+cmath
+-
+cstdlib
+-
+string
+-
+list
+-
+vector
+-
+algorithm
+-
+stdexcept
+-
+iomanip
+-
+iterator
+-
+regex
+-
+
+/home/alex/projects/MemoryManagerRBTree/src/main.cpp
+memorymanagerrbtree_facilities.h
+-
+map
+-
+functional
+-
+

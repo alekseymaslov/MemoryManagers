@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -std=c++17 -g  -rdynamic CMakeFiles/memorymanagerrbtree.dir/main.cpp.o  -o ../bin/memorymanagerrbtree 

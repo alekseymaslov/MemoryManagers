@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/alex/projects/MemoryManagerRBTree/build/src",
+  "command": "/usr/bin/c++  -DGIT_BRANCH=Unknown -I/home/alex/projects/MemoryManagerRBTree/build/src -I/home/alex/projects/MemoryManagerRBTree/src -I/home/alex/projects/MemoryManagerRBTree/src/headers   -Wall -std=c++17 -g   -o CMakeFiles/memorymanagerrbtree.dir/main.cpp.o -c /home/alex/projects/MemoryManagerRBTree/src/main.cpp",
+  "file": "/home/alex/projects/MemoryManagerRBTree/src/main.cpp"
+}
+]
