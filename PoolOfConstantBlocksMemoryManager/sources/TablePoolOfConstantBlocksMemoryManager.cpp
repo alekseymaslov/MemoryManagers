@@ -116,17 +116,6 @@ void TablePoolOfConstantBlocksMemoryManager::Free(void* inPointer)
     }
     else
     {
-        if(0 != tableCounter)
-        {
-            void* tableNode = MemoryShiftForward(memoryPool, (tableCounter - 1) * tableNodeSize);
-            uintptr_t* lastFreeFragment = static_cast<uintptr_t*>(tableNode);
-            void* lastFreeFragmentPointer = MemoryShiftForward(memoryPool, (*lastFreeFragment));
-            if(inPointer == lastFreeFragmentPointer)
-            {
-                throw invalid_argument("attempt to free memory that was already freed.");
-            }   
-        }
-        
         uintptr_t* freeFragment  = new(MemoryShiftForward(memoryPool, tableCounter * tableNodeSize)) uintptr_t;
         /*NOTE: store memory shift instead of pointer itself of to avoid reinterpret_cast*/
         uint8_t*   uptrMemory    = static_cast<uint8_t*>(memoryPool);
