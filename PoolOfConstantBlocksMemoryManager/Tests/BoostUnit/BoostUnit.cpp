@@ -105,28 +105,6 @@ BOOST_AUTO_TEST_CASE( TestAllocate_request_checkSimpleAllocationMemory)
     BOOST_CHECK( isExcep );
 }
 
-BOOST_AUTO_TEST_CASE( TestAllocate_request_checkPointersAllocationMemory)
-{
-    bool isExcep = true;
-    try
-    {
-        TablePoolOfConstantBlocksMemoryManager mManager(memoryPool, poolSize, blockSize);
-        auto pointerOne = mManager.Allocate();
-        auto pointerTwo = mManager.Allocate();
-        if(pointerOne == pointerTwo)
-        {
-            isExcep = false;
-        }
-    }
-    catch(std::exception excep)
-    {
-        isExcep = false;
-    }
-    
-    BOOST_CHECK( isExcep );
-}
-
-
 BOOST_AUTO_TEST_CASE( TestAllocate_request_moreMemoryThatIsEnbleToProvide )
 {
     bool isExcep = false;
@@ -210,25 +188,6 @@ BOOST_AUTO_TEST_CASE( TestAllocateFree_check_freeMemoryWithShift )
     
     BOOST_CHECK( isExcep );
 }
-
-BOOST_AUTO_TEST_CASE( TestAllocateFree_check_doubleFree )
-{
-    bool isExcep = false;
-    try
-    {
-        TablePoolOfConstantBlocksMemoryManager mManager(memoryPool, poolSize, blockSize);
-        auto pointer = mManager.Allocate();
-        mManager.Free(pointer);
-        mManager.Free(pointer);
-    }
-    catch(std::exception excep)
-    {
-        isExcep = true;
-    }
-    
-    BOOST_CHECK( isExcep );
-}
-
 
 BOOST_AUTO_TEST_CASE( TestAllocateFree_check_normalBehavior )
 {
