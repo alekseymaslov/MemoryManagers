@@ -24,7 +24,7 @@
 /** 
  *  @brief   This class provides with memory management for constant size
  *  blocks allocation 
- *  @details This class use table management approach with is meant that
+ *  @details This class use table management approach with is means that
  *  in start of given pool will be placed table for memory management  with
  *  is store shifts to free fragment of memory pool. The table size can be
  *  calculated by a formula: pool/(block size + sizeof(size_t)).
@@ -77,6 +77,7 @@ public:
      * @details the function free previosly allocated memory block, can throw
      * exception if given pointer equal to nullptr or out of range memoryStartPointer 
      * and memoryEndPointer or if none previos block where allocated.
+     * WARNING: do not try to free previosly freed memory
      */
     void Free(void* inPointer) override;
 };

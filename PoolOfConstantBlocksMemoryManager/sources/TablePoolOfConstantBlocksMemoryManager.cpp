@@ -113,6 +113,11 @@ void TablePoolOfConstantBlocksMemoryManager::Free(void* inPointer)
     if(inPointer == lastTakenMemory)
     {
         blockCounter--;
+        if(tableCounter == blockCounter)
+        {
+            /* NOTE: reset table for case when last block in sequance is freed last */
+            tableCounter = blockCounter = 0;
+        }
     }
     else
     {

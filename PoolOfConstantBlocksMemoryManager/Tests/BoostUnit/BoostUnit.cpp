@@ -105,6 +105,7 @@ BOOST_AUTO_TEST_CASE( TestAllocate_request_checkSimpleAllocationMemory)
     BOOST_CHECK( isExcep );
 }
 
+
 BOOST_AUTO_TEST_CASE( TestAllocate_request_moreMemoryThatIsEnbleToProvide )
 {
     bool isExcep = false;
@@ -188,6 +189,7 @@ BOOST_AUTO_TEST_CASE( TestAllocateFree_check_freeMemoryWithShift )
     
     BOOST_CHECK( isExcep );
 }
+
 
 BOOST_AUTO_TEST_CASE( TestAllocateFree_check_normalBehavior )
 {
